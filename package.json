@@ -1,0 +1,15 @@
+{
+  "name": "validation-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Vishal Sherathiya",
+  "license": "ISC",
+  "dependencies": {
+    "isvalid": "^1.6.6",
+    "restify": "^5.0.0"
+  }
+}
