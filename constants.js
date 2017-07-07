@@ -12,6 +12,7 @@ module.exports = {
         NAME_INVALID_DATA_TYPE: "name should be a string",
         EMAIL_INVALID_DATA_TYPE: "email should be a string",
         MOBILE_NO_INVALID_DATA_TYPE: "mobile_no should be a number",
+        DOB_INVALID_DATA_TYPE: "date_of_birth should be a date",
         USERS_REQUIRED: "users is required",
         USER_REQUIRED: "input is required",
         NAME_REQUIRED: "name is required",

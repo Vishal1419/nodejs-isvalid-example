@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "isvalid": "^1.6.6",
+    "moment": "^2.18.1",
     "restify": "^5.0.0"
   }
 }

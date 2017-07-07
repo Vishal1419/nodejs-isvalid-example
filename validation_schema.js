@@ -1,5 +1,5 @@
 var constants = require('./constants');
-
+var moment = require('moment');
 /*
  * Sample data:
  * {
@@ -87,6 +87,22 @@ module.exports = {
                                 required: {
                                     errorCode: constants.ERROR_CODES.REQUIRED_FIELD,
                                     message: constants.ERROR_MSGS.MOBILE_NO_REQUIRED
+                                }
+                            }
+                        },
+                        date_of_birth: {
+                            type: Date,
+                            custom: function(dob, schema) {
+                                // if(dob >= moment.now()) {
+                                    console.log("dob: " + moment(dob).format('DD-MM-YY'));
+                                    console.log("now: " + moment.now().format('DD-MM-YY'));
+                                    return console.log("Invalid date of birth");
+                                // }
+                            },
+                            errors : {
+                                type: {
+                                    errorCode: constants.ERROR_CODES.INVALID_DATA_TYPE,
+                                    message: constants.ERROR_MSGS.DOB_INVALID_DATA_TYPE
                                 }
                             }
                         }
